@@ -1,4 +1,5 @@
-# Calculadora_os_de_python
+## Calculadora_os_de_python
+
 Una calculadora de codigo abierto en el cual haremos nuestras cuentas
 
 # Calculadora Open Source
@@ -25,7 +26,7 @@ Este es un proyecto de calculadora básica desarrollado en Python, siguiendo una
     ```
 2.  **Navegar al directorio del proyecto:**
     ```bash
-    cd calculadora-open-source
+    cd Calculadora_os_de_python
     ```
 3.  **Ejecutar el programa principal:**
     ```bash
