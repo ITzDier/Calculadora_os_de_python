@@ -3,6 +3,8 @@ import resta
 import multiplicacion
 import dividir
 import suma_avanzada
+import resta_avanzada
+import multiplicacion_avanzada
 
 def mostrar_menu():
     print("\n--- Calculadora Open Source ---")
@@ -11,7 +13,9 @@ def mostrar_menu():
     print("3. Multiplicar 2 números")
     print("4. Dividir 2 números")
     print("5. Sumar varios números (avanzada)")
-    print("6. Salir")
+    print("6. Restar varios números (avanzada)")
+    print("7. Multiplicar varios números (avanzada)")
+    print("8. Salir")
     print("-----------------------------")
 
 def obtener_numeros(cantidad):
@@ -66,6 +70,34 @@ def main():
                 resultado = suma_avanzada.suma_n_numeros(*nums)
                 print(f"El resultado de la suma avanzada es: {resultado}")
         elif opcion == '6':
+            while True:
+                try:
+                    cantidad = int(input("¿Cuántos números desea restar? "))
+                    if cantidad <= 0:
+                        print("Por favor, ingrese un número positivo.")
+                        continue
+                    break
+                except ValueError:
+                    print("Entrada inválida. Por favor, ingrese un número entero.")
+            nums = obtener_numeros(cantidad)
+            if nums:
+                resultado = resta_avanzada.resta_n_numeros(*nums)
+                print(f"El resultado de la resta avanzada es: {resultado}")
+        elif opcion == '7':
+            while True:
+                try:
+                    cantidad = int(input("¿Cuántos números desea multiplicar? "))
+                    if cantidad <= 0:
+                        print("Por favor, ingrese un número positivo.")
+                        continue
+                    break
+                except ValueError:
+                    print("Entrada inválida. Por favor, ingrese un número entero.")
+            nums = obtener_numeros(cantidad)
+            if nums:
+                resultado = multiplicacion_avanzada.multiplica_n_numeros(*nums)
+                print(f"El resultado de la multiplicacion avanzada es: {resultado}")
+        elif opcion == '8':
             print("¡Gracias por usar la calculadora!")
             break
         else:
