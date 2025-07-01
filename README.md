@@ -13,6 +13,8 @@ Este es un proyecto de calculadora básica desarrollado en Python, siguiendo una
 * Multiplicación de dos números
 * División de dos números (con manejo de división por cero)
 * Suma de N cantidad de números (función avanzada)
+* Resta de N cantidad de números (función avanzada)
+* Multiplicación de N cantidad de números (función avanzada)
 
 ## Requerimientos
 
@@ -41,7 +43,10 @@ Este es un proyecto de calculadora básica desarrollado en Python, siguiendo una
 * `multiplicacion.py`: Define la función para multiplicar dos números.
 * `dividir.py`: Define la función para dividir dos números.
 * `suma_avanzada.py`: Define la función para sumar una cantidad 'N' de números.
+* `resta_avanzada.py`: Define la función para restar una cantidad de 'N' números.
+* `multiplicacion_avanzada.py`: Define la función para multiplicar 'N' números.
 * `README.md`: Este archivo, con las instrucciones y descripción del proyecto.
+
 
 ## Importante
 
