@@ -5,6 +5,7 @@ import dividir
 import suma_avanzada
 import resta_avanzada
 import multiplicacion_avanzada
+import grafica_genshin
 
 def mostrar_menu():
     print("\n--- Calculadora Open Source ---")
@@ -15,7 +16,8 @@ def mostrar_menu():
     print("5. Sumar varios números (avanzada)")
     print("6. Restar varios números (avanzada)")
     print("7. Multiplicar varios números (avanzada)")
-    print("8. Salir")
+    print("8. Generar gráfica Genshin Impact (Mualani)")
+    print("9. Salir")
     print("-----------------------------")
 
 def obtener_numeros(cantidad):
@@ -98,6 +100,11 @@ def main():
                 resultado = multiplicacion_avanzada.multiplica_n_numeros(*nums)
                 print(f"El resultado de la multiplicacion avanzada es: {resultado}")
         elif opcion == '8':
+            print("\n🎮 Generando gráfica de Genshin Impact...")
+            grafica_genshin.mostrar_stats_mualani()
+            archivo = grafica_genshin.crear_grafica_mualani()
+            print(f"✅ Gráfica guardada como: {archivo}")
+        elif opcion == '9':
             print("¡Gracias por usar la calculadora!")
             break
         else:

@@ -15,10 +15,12 @@ Este es un proyecto de calculadora básica desarrollado en Python, siguiendo una
 * Suma de N cantidad de números (función avanzada)
 * Resta de N cantidad de números (función avanzada)
 * Multiplicación de N cantidad de números (función avanzada)
+* Generación de gráficas comparativas (Genshin Impact - Análisis de stats de Mualani)
 
 ## Requerimientos
 
 * Python 3.x
+* matplotlib (para generación de gráficas)
 
 ## Cómo Ejecutar
 
@@ -30,7 +32,11 @@ Este es un proyecto de calculadora básica desarrollado en Python, siguiendo una
     ```bash
     cd Calculadora_os_de_python
     ```
-3.  **Ejecutar el programa principal:**
+3.  **Instalar dependencias (si es necesario):**
+    ```bash
+    pip install matplotlib
+    ```
+4.  **Ejecutar el programa principal:**
     ```bash
     python main.py
     ```
@@ -45,6 +51,7 @@ Este es un proyecto de calculadora básica desarrollado en Python, siguiendo una
 * `suma_avanzada.py`: Define la función para sumar una cantidad 'N' de números.
 * `resta_avanzada.py`: Define la función para restar una cantidad de 'N' números.
 * `multiplicacion_avanzada.py`: Define la función para multiplicar 'N' números.
+* `grafica_genshin.py`: Genera gráficas comparativas para análisis de stats de Genshin Impact.
 * `README.md`: Este archivo, con las instrucciones y descripción del proyecto.
 
 
